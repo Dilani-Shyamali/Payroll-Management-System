@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="acrLeave" prefHeight="543.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.payroll.controller.LeaveFormController">
+   <children>
+      <Label layoutX="146.0" layoutY="73.0" prefHeight="40.0" prefWidth="213.0" text="Leave Form" textFill="#b33959">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="93.0" layoutX="28.0" layoutY="22.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/leave.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblLeave" layoutX="46.0" layoutY="134.0" prefHeight="386.0" prefWidth="661.0">
+        <columns>
+          <TableColumn fx:id="colEmpID" prefWidth="75.0" text="Emp ID" />
+          <TableColumn fx:id="colEmpName" prefWidth="81.0" text="Emp Name" />
+            <TableColumn fx:id="colDesignation" prefWidth="79.0" text="Designation" />
+            <TableColumn fx:id="colReason" prefWidth="65.0" text="Reason" />
+            <TableColumn fx:id="colDate" prefWidth="89.0" text="Date" />
+            <TableColumn fx:id="colStrtDate" prefWidth="88.0" text="Leave &#10;Sarting &#10;Date" />
+            <TableColumn fx:id="colEndDate" prefWidth="109.0" text="Leave&#10;Closing&#10;Date" />
+            <TableColumn fx:id="colApprove" prefWidth="74.0" text="Approve" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

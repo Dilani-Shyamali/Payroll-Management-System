@@ -1,0 +1,19 @@
+ INSERT INTO attendance Values('E001' , '2019-09-24' , true);
+
+
+
+ INSERT INTO salary Values('E001' , '2019-09-24' , 234.23);
+
+
+
+
+
+ INSERT INTO employee Values('E001' , '2019-09-24' ,'Sandun' ,'1234' ,'Teacher', '077-1589906' ,'182736871263v', 234.23);
+
+
+
+
+
+
+
+INSERT INTO leaves Values('E001' , '2019-09-24' ,'2019-10-03' ,'2019-10-07' ,'personal', false);

@@ -1,0 +1,80 @@
+create database payroll;
+
+use payroll;
+
+create table employee
+(
+  empID varchar(20)  not null primary key ,
+  date Date not null,
+  empName   varchar(50)  not null,
+  password varchar(50) not null,
+  designation varchar(50) not null,
+  contactNo varchar(50) not null,
+  NIC varchar(50) not null,
+  daySalary double(20,2) not null
+);
+
+
+create table leaves
+(
+  empID varchar(20)  not null,
+  applyDate Date not null,
+  lvStartDate Date not null,
+  lvEndDate Date not null,
+  reason varchar(150),
+  lvStatus Boolean not null,
+  primary key (empID , applyDate),
+constraint leave_employee_empID_fkey
+    foreign key (empID) references employee (empID)
+      on update cascade on delete cascade
+);
+
+
+create table attendance
+(
+  empID varchar(20) not null,
+  date Date not null,
+  attendance Boolean not null,
+  primary key(empID,date),
+constraint attendance_employee_empID_fkey
+    foreign key (empID) references employee (empID)
+      on update cascade on delete cascade
+);
+
+
+create table salary
+(
+  empID varchar(20)  not null primary key,
+  date Date not null,
+  daySalary double(50,2) not null,
+constraint salary_employee_empID_fkey
+    foreign key (empID) references employee (empID)
+      on update cascade on delete cascade
+);
+
+create table rate
+(
+  rateID varchar(20)  not null primary key,
+  date Date not null,
+  ETF double(50,2) not null,
+  EPFEmp double(50,2) not null,
+  EPFCom double(50,2) not null
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+.acrMainAdmin{
+    -fx-background-color:#FFF785 ;
+}
+.borderPane{
+    -fx-background-color:#B33959 ;
+}
+
+.acrAddEmp{
+    -fx-background-color:#FFF785;
+}
+
+.acrCalSalary{
+    -fx-background-color:#FFF785;
+}
+#acrMainAdmin{
+    -fx-background-color:#FFF785 ;
+}
+
+/*#btnLvApprove , #btnCalSalary ,*/
+/*#btnMarkAtt , #btnUpdateSlry , #btnUpdateRate , #btnSave ,*/
+/*#btnNewEmp , #btnNewSalary,#btnCalSalary , #btnReport{*/
+/*    -fx-background-color: linear-gradient(#009688, #5498B3);*/
+/*    -fx-background-insets: 0;*/
+/*    -fx-text-fill: black;*/
+/*}*/
+
+.button {
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+}
+
+#btnAddEmp:hover {
+    -fx-background-color: #EA4630;
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+    -fx-border-color: #146B3A;
+    -fx-border-radius: 50;
+    -fx-border-width: 1;
+    -fx-text-fill: white;
+}
+
+#btnUpdateSlry:pressed {
+    -fx-background-color: #BB2528;
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+    -fx-border-color: #165B33;
+    -fx-border-radius: 50;
+    -fx-border-width: 3;
+    -fx-text-fill: white;
+    -fx-rotate: 2;
+}
+
+#btnUpdateSlry:focused {
+    -fx-background-color: #BB2528;
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+    -fx-text-fill: darkgrey;
+}
+

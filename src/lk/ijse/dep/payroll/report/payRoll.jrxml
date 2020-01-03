@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payRoll" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b77bbf3-c3e6-47c7-9ac3-b1b5b37b7b4e">
+	<parameter name="employeeId" class="java.lang.String"/>
+	<parameter name="employeeName" class="java.lang.String"/>
+	<parameter name="month" class="java.lang.String"/>
+	<parameter name="daySalary" class="java.lang.String"/>
+	<parameter name="attendance" class="java.lang.String"/>
+	<parameter name="totalSalary" class="java.lang.String"/>
+	<parameter name="epfEmp" class="java.lang.String"/>
+	<parameter name="epfComp" class="java.lang.String"/>
+	<parameter name="etfComp" class="java.lang.String"/>
+	<parameter name="netSalary" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="69" width="340" height="30" uuid="5d5cb011-c248-4da3-8521-7a04fa14026d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telford International School-Galle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="90" width="230" height="30" uuid="b81c58c8-7e3f-49c8-bedb-13774eaff6bb"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Baddegama Road, Galle,Sri Lanka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="110" width="230" height="30" uuid="c9635ff8-4293-498d-9906-1914d0af167e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 091-1231234 / 077-1569608]]></text>
+			</staticText>
+			<image>
+				<reportElement x="250" y="10" width="60" height="60" uuid="b75b0cf4-1fa8-4ce5-890b-3a4a36fade0b"/>
+				<imageExpression><![CDATA["lk/ijse/dep/payroll/assrt/tis.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="40" uuid="f66d13df-5f74-44fc-8651-060fd9af885c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[=============================================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="56" width="555" height="40" uuid="3c344826-5381-4a6a-8bc8-62d12c8d7938"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pay Sheet]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="397" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="130" width="110" height="30" uuid="300baade-8e65-4662-9110-3b8f565582f1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Day Salary]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="120" width="150" height="30" uuid="b8ac22f1-2748-40dc-a087-0bc81ce2fb34"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{daySalary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="208" width="110" height="30" uuid="22d17ebc-c85e-4d8d-a453-adff829d7aea"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Salary]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="241" width="150" height="30" uuid="21f4127e-91ae-45f8-88fb-162154945074"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{epfEmp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="42" width="30" height="30" uuid="5249c53a-4588-49fd-ba54-ac0a1279dc47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="284" width="150" height="30" uuid="51f0498a-7f1c-416b-a98c-eb8400594011"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{epfComp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="10" width="150" height="30" uuid="ae43266c-b946-479b-91d1-8ffe01f62763"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employeeId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="288" width="210" height="30" uuid="707117d2-b14d-4082-8a79-4390f52dba1f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPF Company Contribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="165" width="30" height="30" uuid="cd509a65-be6a-473d-b698-510239df1aa5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="160" width="150" height="30" uuid="b090b965-abf6-411b-a531-649ef170b5be"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{attendance}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="50" width="110" height="30" uuid="b0e92d3a-36a1-4f20-9a37-fdc90963fb8a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="364" width="30" height="30" uuid="11ade1ad-b8e2-412c-afb5-4233199720ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="248" width="210" height="30" uuid="c462fb7f-706d-4f9c-8d75-635e13c82987"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPF Employee Contribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="125" width="30" height="30" uuid="df7f9799-669c-40b4-ba30-fc79c61a1202"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="203" width="30" height="30" uuid="5da9ae2a-5a8d-4b78-9d1c-a57761529ba5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="284" width="30" height="30" uuid="91454d8b-19f5-49e6-b92b-ae49de25bae6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="324" width="30" height="30" uuid="1bf3e909-e0a6-4d0d-a723-f872b4fe8042"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="328" width="210" height="30" uuid="f77e48fc-606c-4b35-8cca-a63c63c0f6eb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ETF Company Contribution]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="367" width="210" height="30" uuid="58151ba0-5bb6-4e8e-9407-655330fefb9e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Salary]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="364" width="150" height="30" uuid="55e3dece-4f37-4d31-b2e2-a30675a8b005"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{netSalary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="42" width="150" height="30" uuid="6709dd9a-055b-4275-bda8-73b3180cbb88"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{employeeName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="243" width="30" height="30" uuid="d78e75fe-7351-4eb0-b55b-05ef4002760f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="90" width="110" height="30" uuid="b856d00b-9382-4d07-b2bb-1f63d0cdfc42"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="8" width="30" height="30" uuid="eb3624b0-39f1-4dc9-b3d4-b988c3670039"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="110" height="30" uuid="063a6b57-3713-4183-96d7-94908e607fa1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="168" width="110" height="30" uuid="db9a246e-a74d-4aa6-9221-f9a2621626fa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Attendance]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="324" width="150" height="30" uuid="18e33746-d7db-4e46-bc2c-5510a42ece4c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etfComp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="80" width="150" height="30" uuid="292b29b7-705d-450f-9a55-d0c69e3b910d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="83" width="30" height="30" uuid="8f72f904-8033-48f7-bd08-68a01c07b7ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="200" width="150" height="30" uuid="2974d12d-4a49-4c2a-b533-2f11168d8a2a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSalary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="40" uuid="53ca1543-6cb3-4f30-9c6b-c5ba189b23e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[=============================================================]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="55" width="160" height="30" uuid="b5f687fa-b2ef-4617-a304-ad24d0be3091"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[--------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="91" width="160" height="30" uuid="09f6a555-6f1f-4ac9-a782-c649c0f57978"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Signature of the CEO ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

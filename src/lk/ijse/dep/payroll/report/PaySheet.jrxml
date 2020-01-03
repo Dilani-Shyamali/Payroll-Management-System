@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PaySheet" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="209d62c4-a929-492c-acec-6fb7fe81b1d0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="payroll"/>
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[cGF5cm9sbC5zYWxhcnkgQVMgLDIyNiw2OCw2ZGQ1YWRhZi0zNTgwLTRlYzctYWQxYS0zZmViN2Fh
+MGU3ZWI7cGF5cm9sbC5lbXBsb3llZSBBUyAsODQsNDMsYzMyZjUwMmEtNjgzMS00ZTMxLTljMTUt
+NjkxYmEzYzM3YWQ4O3BheXJvbGwucmF0ZSBBUyAsMzQ3LDQzLDg1NDg2YTZjLThjZWItNGYzYS1h
+MTE5LTM0NjI3ZmIwNjhhNjs=]]>
+	</property>
+	<queryString>
+		<![CDATA[SELECT payroll.employee.`empID`,
+	payroll.employee.`empName`,
+	payroll.employee.designation,
+	payroll.employee.`NIC`,
+	payroll.employee.`empID`,
+	payroll.employee.`empName`,
+	payroll.employee.designation,
+	payroll.employee.`NIC`,
+	payroll.salary.date,
+	payroll.salary.`daySalary`,
+	payroll.rate.`EPFCom`,
+	payroll.rate.`EPFEmp`,
+	payroll.rate.`ETF`
+FROM payroll.rate,
+	payroll.salary
+	INNER JOIN payroll.employee ON 
+	 payroll.salary.`empID` = payroll.employee.`empID`]]>
+	</queryString>
+	<field name="empID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="empID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="empName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="empName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="COLUMN_5" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="empID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="COLUMN_6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="empName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="COLUMN_7" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="COLUMN_8" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="employee"/>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+	</field>
+	<field name="daySalary" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="daySalary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+	</field>
+	<field name="EPFCom" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="EPFCom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rate"/>
+	</field>
+	<field name="EPFEmp" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="EPFEmp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rate"/>
+	</field>
+	<field name="ETF" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="ETF"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rate"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="69" width="340" height="30" uuid="72305fa2-4d79-4dea-b136-4ee530bb5455"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telford International School-Galle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="90" width="230" height="30" uuid="6ea3abe3-6544-4d44-8307-eec71c4b5e83"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Baddegama Road, Galle,Sri Lanka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="110" width="230" height="30" uuid="29ca47ad-d5e0-4a9b-b959-0dcc41429369"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 091-1231234 / 077-1569608]]></text>
+			</staticText>
+			<image>
+				<reportElement x="240" y="7" width="70" height="69" uuid="53e9f6a5-7e69-41ad-b1c4-68d7f05613db"/>
+				<imageExpression><![CDATA["/asset/tis.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="98" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

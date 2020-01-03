@@ -1,0 +1,70 @@
+.acrMainAdmin{
+    -fx-background-color:#FFF785 ;
+}
+
+#acrMainAdmin{
+    -fx-background-color:#FFF785 ;
+}
+
+#btnSignOut{
+    -fx-background-color: #B33959;
+    -fx-text-fill: white;
+}
+
+#btnNewSalary,
+#btnSave,
+#btnNewEmp,
+#btnNewSalary,
+#btnCalSalary,
+#btnReport{
+    -fx-background-color: linear-gradient(#009688, #5498B3);
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+}
+
+#btnCalSalary,
+#btnAddEmp ,
+#btnUpdateRate ,
+#btnLvApprove ,
+#btnMarkAtt ,
+#btnUpdateSlry,
+#btnBackup{
+    -fx-background-color: linear-gradient(#009688, #5498b3);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+}
+
+#btnCalSalary:hover,
+#btnUpdateRate:hover ,
+#btnLvApprove:hover ,
+#btnMarkAtt:hover ,
+#btnUpdateSlry:hover,
+#btnAddEmp:hover,
+#btnBackup:hover {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+    -fx-border-color: #000000;
+    -fx-border-radius: 50;
+    -fx-border-width: 1;
+    -fx-text-fill: black;
+}
+
+#btnCalSalary:focused,
+#btnUpdateRate:focused ,
+#btnLvApprove:focused ,
+#btnMarkAtt:focused ,
+#btnUpdateSlry:focused,
+#btnAddEmp:focused,
+#btnBackup:focused {
+    -fx-background-color: #b36472;
+    -fx-background-radius: 50;
+    -fx-font-family: CrackMan;
+    -fx-font-size: 26;
+    -fx-border-color: #000000;
+    -fx-border-radius: 50;
+    -fx-border-width: 1;
+    -fx-text-fill: white;
+}

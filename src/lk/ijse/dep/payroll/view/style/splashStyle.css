@@ -1,0 +1,13 @@
+.root{
+    -fx-background-color:#FFF785 ;
+}
+.borderPane{
+    -fx-background-color:#B33959 ;
+}
+
+#btnSignIn , #btnUpdate {
+    -fx-background-color: linear-gradient(#41A5CC, #5498B3);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: black;
+}
